@@ -30,7 +30,10 @@ export function getCohort(student) {
  * sortStudents({cohort: 1, name: "Alice"}, {cohort: 2, name: "Alice"}); // {cohort: 1, name: "Alice"}
  */
 export function sortStudents(studentA, studentB) {
-  // TODO
+  if (studentB.name < studentA.name) {
+    return studentB;
+  }
+  return studentA;
 }
 
 /**
