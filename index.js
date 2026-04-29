@@ -117,6 +117,7 @@ export function getHerbivores(animals) {
       herbivores.push(animal);
     }
   }
+  return herbivores;
 }
 
 /**
